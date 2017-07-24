@@ -1,23 +1,33 @@
-//
-//  ViewController.swift
-//  savePG
-//
-//  Created by MaxCheng on 2017/7/23.
-//  Copyright © 2017年 com.USSwiftCoda. All rights reserved.
-//
+
 
 import UIKit
+import Firebase
+
 
 class ViewController: UIViewController {
+ 
+    @IBOutlet weak var labelMyText: UILabel!
+    @IBOutlet weak var txtInput: UITextField!
+  
+    var  ref  : DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+  ref = Database.database().reference(fromURL: "https://myfirebase-c064c.firebaseio.com/").child("test")
+        
+      
+      
+         ref.observe(DataEventType.value, with: { (snapshot) in
+            let postString = snapshot.value as! String
+            self.labelMyText.text = postString
+         })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+ 
+    @IBAction func pressButton(_ sender: UIButton)
+    {
+          ref.setValue(txtInput.text)
     }
 
 
