@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="薪薪向榮_啟動頁" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_薪薪向榮.png" translatesAutoresizingMaskIntoConstraints="NO" id="s5O-jl-PUt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_薪薪向榮.png" translatesAutoresizingMaskIntoConstraints="NO" id="XpM-vd-2rE">
+                                <rect key="frame" x="60" y="120" width="255" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="Pl4-II-wGJ"/>
+                                    <constraint firstAttribute="width" constant="255" id="vRI-6B-0aH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="薪薪向榮" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML3-RA-91h">
+                                <rect key="frame" x="0.0" y="307" width="375" height="36"/>
+                                <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="36"/>
+                                <color key="textColor" red="0.027450980392156862" green="0.47450980392156861" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfz-Fc-WDU">
+                                <rect key="frame" x="26" y="363" width="323" height="54"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="只要簡單填寫理想中的職務及薪資範圍就可以找到錢多離家又近的工作">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name=".PingFangTC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5F-Ta-Z9O">
+                                <rect key="frame" x="62" y="447" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="HQd-hi-qct"/>
+                                    <constraint firstAttribute="height" constant="50" id="tew-iI-vWG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="馬上開始" backgroundImage="btn_main.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s5O-jl-PUt" secondAttribute="bottom" id="20Y-wf-hne"/>
+                            <constraint firstItem="XpM-vd-2rE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="27e-kh-DUQ"/>
+                            <constraint firstAttribute="trailing" secondItem="s5O-jl-PUt" secondAttribute="trailing" id="3hv-iA-EGg"/>
+                            <constraint firstItem="ML3-RA-91h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AeX-GB-BGZ"/>
+                            <constraint firstItem="Bfz-Fc-WDU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="JR0-Lj-YXH"/>
+                            <constraint firstItem="S5F-Ta-Z9O" firstAttribute="top" secondItem="Bfz-Fc-WDU" secondAttribute="bottom" constant="30" id="O6D-ei-9Ad"/>
+                            <constraint firstItem="s5O-jl-PUt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RNd-fX-gcH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bfz-Fc-WDU" secondAttribute="trailing" constant="10" id="WS1-BV-tVU"/>
+                            <constraint firstItem="ML3-RA-91h" firstAttribute="top" secondItem="XpM-vd-2rE" secondAttribute="bottom" constant="20" id="Wc5-1y-tV0"/>
+                            <constraint firstAttribute="trailing" secondItem="ML3-RA-91h" secondAttribute="trailing" id="Wed-PN-Mt0"/>
+                            <constraint firstItem="S5F-Ta-Z9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="Zwn-jE-52h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S5F-Ta-Z9O" secondAttribute="trailing" constant="47" id="bPn-Eg-seV"/>
+                            <constraint firstItem="s5O-jl-PUt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dPt-Ge-GJA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XpM-vd-2rE" secondAttribute="trailing" constant="44" id="qWI-pb-Xzc"/>
+                            <constraint firstItem="XpM-vd-2rE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="qvT-9q-GxT"/>
+                            <constraint firstItem="Bfz-Fc-WDU" firstAttribute="top" secondItem="ML3-RA-91h" secondAttribute="bottom" constant="20" id="zWV-CB-iiz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_薪薪向榮.png" width="750" height="1334"/>
+        <image name="btn_main.png" width="500" height="100"/>
+        <image name="logo_薪薪向榮.png" width="509" height="344"/>
+    </resources>
 </document>

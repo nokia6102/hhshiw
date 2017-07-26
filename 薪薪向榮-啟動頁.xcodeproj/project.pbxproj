@@ -12,6 +12,9 @@
 		08AC5E591F10D2E100F597D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AC5E571F10D2E100F597D0 /* Main.storyboard */; };
 		08AC5E5B1F10D2E100F597D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AC5E5A1F10D2E100F597D0 /* Assets.xcassets */; };
 		08AC5E5E1F10D2E100F597D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AC5E5C1F10D2E100F597D0 /* LaunchScreen.storyboard */; };
+		08AC5E661F10D7FB00F597D0 /* bg_薪薪向榮.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AC5E651F10D7FB00F597D0 /* bg_薪薪向榮.png */; };
+		08AC5E681F10DFD000F597D0 /* logo_薪薪向榮.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AC5E671F10DFD000F597D0 /* logo_薪薪向榮.png */; };
+		08AC5E6A1F110C4600F597D0 /* btn_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AC5E691F110C4600F597D0 /* btn_main.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		08AC5E5A1F10D2E100F597D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08AC5E5D1F10D2E100F597D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08AC5E5F1F10D2E100F597D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08AC5E651F10D7FB00F597D0 /* bg_薪薪向榮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_薪薪向榮.png"; sourceTree = "<group>"; };
+		08AC5E671F10DFD000F597D0 /* logo_薪薪向榮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_薪薪向榮.png"; sourceTree = "<group>"; };
+		08AC5E691F110C4600F597D0 /* btn_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_main.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		08AC5E521F10D2E000F597D0 /* 薪薪向榮-啟動頁 */ = {
 			isa = PBXGroup;
 			children = (
+				08AC5E691F110C4600F597D0 /* btn_main.png */,
+				08AC5E671F10DFD000F597D0 /* logo_薪薪向榮.png */,
+				08AC5E651F10D7FB00F597D0 /* bg_薪薪向榮.png */,
 				08AC5E531F10D2E000F597D0 /* AppDelegate.swift */,
 				08AC5E551F10D2E100F597D0 /* ViewController.swift */,
 				08AC5E571F10D2E100F597D0 /* Main.storyboard */,
@@ -124,8 +133,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AC5E5E1F10D2E100F597D0 /* LaunchScreen.storyboard in Resources */,
+				08AC5E681F10DFD000F597D0 /* logo_薪薪向榮.png in Resources */,
+				08AC5E661F10D7FB00F597D0 /* bg_薪薪向榮.png in Resources */,
 				08AC5E5B1F10D2E100F597D0 /* Assets.xcassets in Resources */,
 				08AC5E591F10D2E100F597D0 /* Main.storyboard in Resources */,
+				08AC5E6A1F110C4600F597D0 /* btn_main.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "薪薪向榮-啟動頁/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "leo.--------";
+				PRODUCT_BUNDLE_IDENTIFIER = leo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,7 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "薪薪向榮-啟動頁/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "leo.--------";
+				PRODUCT_BUNDLE_IDENTIFIER = leo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

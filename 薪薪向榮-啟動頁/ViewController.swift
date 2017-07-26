@@ -1,18 +1,13 @@
-//
-//  ViewController.swift
-//  薪薪向榮-啟動頁
-//
-//  Created by leo_unision on 2017/7/8.
-//  Copyright © 2017年 unision. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //設定背景圖（未解的問題：問題是要如何讓他符合裝置的大小？）
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg_薪薪向榮.png")!)
+      //fjsldfj
     }
 
     override func didReceiveMemoryWarning() {
